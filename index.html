@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 	<title>
-		
+		College Prep Hangman!
 	</title>
 
 	<meta charset="UTF-8">
@@ -16,9 +16,43 @@
 
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
+
 </head>
 <body>
+
+	<div class="heading">
+		<p>Hangman: SAT Prep Edition</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-md-8">
+				<div class="panel panel-default">
+				  <div class="panel-body">
+				    <p>Press any key to start!</p>
+				    <p>Wins:</p>
+				    <p id="totalWins">0</p>
+				    <p>Current Word</p>
+				    <p id="wordGuess">_ _ _ _</p>
+				    <p>Number of Guesses Remaining</p>
+				    <p id="wrongGuess">15</p>
+				    <p >Letters Already Guessed</p>
+				    <p id="letterBank"></p>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				&copy; Copyright 2017 Nhu Y Pham
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/javascript/game.js"></script>
+
+
 
 </body>
 </html>
