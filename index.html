@@ -17,37 +17,51 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
 </head>
 <body>
 
 	<div class="heading">
-		<p>Hangman: SAT Prep Edition</p>
+		<p><h1 id="header">HANGMAN: COLLEGE PREP EDITION</h1></p>
 	</div>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 col-md-8">
+			<div id ="section1" class="col-sm-8 col-md-8">
 				<div class="panel panel-default">
 				  <div class="panel-body">
-				    <p>Press any key to start!</p>
-				    <p>Wins:</p>
-				    <p id="totalWins">0</p>
-				    <p>Current Word</p>
+				    <p id="instructions"><h2>Press any key to start!</h2></p>
+				  	<br>
+				    <p><h3>Current Word</h3></p>
 				    <p id="wordGuess">_ _ _ _</p>
-				    <p>Number of Guesses Remaining</p>
-				    <p id="wrongGuess">15</p>
-				    <p >Letters Already Guessed</p>
+				   	<br>
+				    <p><h3>Letters Already Guessed</h3></p>
 				    <p id="letterBank"></p>
+				  </div>
+				</div>
+			</div>
+
+			<div id ="section2" class="col-sm-4 col-md-4">
+				<div class="panel panel-default">
+				  <div class="panel-body">
+				   
+				    <p><h3>Wins:</h3></p>
+				    <p id="totalWins">0</p>
+				    <br>
+				    <p><h3>Number of Guesses Remaining</h3></p>
+				    <p id="wrongGuess">15</p>
+				    
 				  </div>
 				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-sm-12 col-md-12">
-				&copy; Copyright 2017 Nhu Y Pham
-			</div>
-		</div>
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+	  		<div id= "footer" class="container">
+	    		<p>&copy; Copyright 2017 Nhu Y Pham</p>
+	  		</div>
+		</nav>
 	</div>
 
 	<script src="assets/javascript/game.js"></script>
