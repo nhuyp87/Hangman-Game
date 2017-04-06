@@ -1,3 +1,12 @@
+// Counter for wins. 
+var victory = 0;
+
+// Counter for remaining guesses, set equal to 15. 
+var guessesRemaining = 15; 
+
+// Array used for letters guessed. 
+var lettersGuessed = []; 
+
 // Word bank for game: 
 var wordBank = ["abate","aberration","abstruse","accost","acrimony","acumen","adamant", "banal", "barrage", "belie", "belligerent", "benevolent", "bequest", "berate", "bipartisanship", "chide", "churlish", "circuitous", "circumscribe", "circumvent", "clandestine", "coalesce"];
 
@@ -18,16 +27,6 @@ var emptyArray = [];
 // Print dashes of empty array to document. 
 document.getElementById("wordGuess").innerHTML= emptyArray.join(" ");
 
-
-// Counter for wins. 
-var victory = 0;
-
-// Counter for remaining guesses, set equal to 15. 
-var guessesRemaining = 15; 
-
-
-// Array used for letters guessed. 
-var lettersGuessed = []; 
 
 // Reset function when user guesses word correctly or runs out of remaining guesses. 
 var resetPrint = function () {
@@ -55,7 +54,8 @@ var winCondition = function () {
 	var correctWord = emptyArray.join("");
 		
 		if (correctWord==randWord){
-			alert("Correct word!"); 
+
+			alert("Correct word! The word is " + randWord + "."); 
 			victory++;		
 			document.getElementById("totalWins").innerHTML = victory;
 			resetPrint(); 
@@ -67,7 +67,8 @@ var winCondition = function () {
 var lossCondition = function () {
 
 	if (guessesRemaining < 0) {
-			alert("YOU LOSE! Try again!");
+
+			alert("YOU LOSE! Try again! The word is " + randWord + ".");
 			resetPrint();
 		}
 
