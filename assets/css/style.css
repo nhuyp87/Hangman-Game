@@ -6,6 +6,8 @@ body {
 	font-family: 'Cutive Mono', monospace;
 }
 
+/*Heading*/ 
+
 .heading {
 
 	
@@ -27,6 +29,7 @@ body {
 
 }
 
+/*Footer*/
 
 #footer {
 	text-align: center;
@@ -34,10 +37,10 @@ body {
 }
 
 
+/*Content*/
 .panel-body {
 	text-align: center;
 	padding-bottom: 70px;
-	height: 350px;
 	overflow: auto;
 
 
@@ -68,18 +71,17 @@ p {
 }
 
 
-@media screen and (max-width: 980px) {
-
-	
-	
-}
-
+/*Media Queries */
 
 @media screen and (max-width: 640px) {
 
-	.panel-body {
+	.panel-body{
 		height: 300px;
-		right: 20px;
+	}
+
+	#section1, #section2 {
+		left: 50px;
+
 	}
 	
 }
